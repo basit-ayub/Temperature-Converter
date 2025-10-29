@@ -76,6 +76,7 @@ pipeline {
         }
         success {
             echo "Pipeline succeeded! Version ${APP_VERSION} built and tested."
+            echo "Pipeline successfully built by ${params.STUDENT_NAME} Roll number : 23i3018"
         }
         failure {
             echo "Pipeline failed! Check console output for details."

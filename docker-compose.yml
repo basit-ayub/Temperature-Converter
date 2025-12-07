@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  temp-api:
+    build: .
+    container_name: temp-api
+    ports:
+      - "3000:3000"
+    volumes:
+      - logs-storage:/app/logs
+    restart: always
+
+volumes:
+  logs-storage:
